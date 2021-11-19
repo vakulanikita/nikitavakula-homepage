@@ -1,0 +1,284 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v1.3.48",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Light",
+      "rotation": [
+        0.27418074011802673,
+        0.6657811999320984,
+        0.0260615274310112,
+        0.6934559345245361
+      ],
+      "scale": [
+        1.0409955978393555,
+        1.0409955978393555,
+        1.040995717048645
+      ],
+      "translation": [
+        2.381211519241333,
+        9.377270698547363,
+        3.4080772399902344
+      ]
+    },
+    {
+      "name": "Camera",
+      "rotation": [
+        0.483536034822464,
+        0.33687159419059753,
+        -0.20870360732078552,
+        0.7804827094078064
+      ],
+      "translation": [
+        7.358891487121582,
+        4.958309173583984,
+        6.925790786743164
+      ]
+    },
+    {
+      "mesh": 0,
+      "name": "main",
+      "rotation": [
+        0.7071068286895752,
+        0,
+        0,
+        0.7071067094802856
+      ],
+      "translation": [
+        3.6860475540161133,
+        0,
+        0
+      ]
+    },
+    {
+      "mesh": 1,
+      "name": "Plane",
+      "scale": [
+        7.049901008605957,
+        1,
+        7.049901008605957
+      ],
+      "translation": [
+        -3.3989741802215576,
+        0,
+        -2.953871726989746
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "palette",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      }
+    },
+    {
+      "alphaMode": "BLEND",
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "Material.001",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "main",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Plane",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    },
+    {
+      "source": 1
+    }
+  ],
+  "images": [
+    {
+      "name": "dog-bake",
+      "uri": "dog_img0.png"
+    },
+    {
+      "name": "plane-tex",
+      "uri": "dog_img1.png"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 1543,
+      "max": [
+        -0.800000011920929,
+        2.700000047683716,
+        0
+      ],
+      "min": [
+        -6.400000095367432,
+        -2.299999952316284,
+        -4.400000095367432
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1543,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1543,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 3876,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        1,
+        0,
+        1
+      ],
+      "min": [
+        -1,
+        0,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 6,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 18516,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 18516,
+      "byteOffset": 18516
+    },
+    {
+      "buffer": 0,
+      "byteLength": 12344,
+      "byteOffset": 37032
+    },
+    {
+      "buffer": 0,
+      "byteLength": 7752,
+      "byteOffset": 49376
+    },
+    {
+      "buffer": 0,
+      "byteLength": 48,
+      "byteOffset": 57128
+    },
+    {
+      "buffer": 0,
+      "byteLength": 48,
+      "byteOffset": 57176
+    },
+    {
+      "buffer": 0,
+      "byteLength": 32,
+      "byteOffset": 57224
+    },
+    {
+      "buffer": 0,
+      "byteLength": 12,
+      "byteOffset": 57256
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "dog_data.bin",
+      "byteLength": 57268
+    }
+  ]
+}
