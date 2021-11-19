@@ -3,12 +3,13 @@ import Image from 'next/image'
 import Link from 'next/link';
 // import Layout from '../components/layouts/main.js'
 import styles from '../styles/Home.module.scss'
+import { Box, Heading, Container } from '@chakra-ui/react'
 
 
 export default function Home() {
   return (
-    <div>
-      <main className="container mx-auto max-w-screen-md">
+    <Container>
+      <main>
         <nav className="fixed flex">
           <Link href="/main">
             <a>Nikita Vakula</a>
@@ -20,11 +21,12 @@ export default function Home() {
         </nav>
 
         <div>
-          {/* <h1 className="text-green-500">Hello, world!</h1> */}
+          <Heading as="h2" color="spacejelly">Chakra`s UI heading</Heading>
+          <h1 className="text-green-500">Hello, world!</h1>
         </div>
 
 
       </main>
-    </div>
+    </Container>
   )
 }
