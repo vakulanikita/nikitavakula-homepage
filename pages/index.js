@@ -8,7 +8,6 @@ import Paragraph from '../components/paragraph'
 import CustomButton from '../components/button'
 import MediaLink from '../components/media-link'
 import { BioSection, BioHeader } from '../components/bio'
-import styles from '../styles/Home.module.scss'
 import { 
   Box,
   Text,
@@ -16,7 +15,8 @@ import {
   Heading,
   Image,
   Container,
-  useColorModeValue 
+  SimpleGrid,
+  useColorModeValue
 } from '@chakra-ui/react'
 import {
   IoLogoTwitter,
@@ -24,11 +24,11 @@ import {
   IoLogoGithub,
   IoLogoDiscord,
   IoLogoTelegram,
-  
 } from 'react-icons/io5'
 import {
   FaTelegramPlane
 } from 'react-icons/fa'
+import GridItem from '../components/grid-item.js';
 
 
 export default function Home() {
@@ -56,7 +56,7 @@ export default function Home() {
           </NextLink>
         </Paragraph>
 
-        <Box align="center" my={4}>
+        <Box align="center" my={6}>
           <CustomButton href="./works">My portfolio</CustomButton>
         </Box>
 
@@ -70,23 +70,25 @@ export default function Home() {
           <BioHeader>Backend</BioHeader>Firebase Axios GraphQL
         </BioSection>
 
-        <BioSection>
+        <BioSection mb={8}>
           <BioHeader>Design</BioHeader>Figma Photoshop
         </BioSection>
 
         <BlockTitle>I ♥</BlockTitle>
 
-        <Paragraph>
-          Art, Music,{' '}
-          <NextLink href="#">
-            <Link variant="link-text">Arduino</Link>
-          </NextLink>
-          , Swimming,{' '}
-          <NextLink href="#">
-            <Link variant="link-text">Photography</Link>
-          </NextLink>
-          , Technologies, Machine Learning
-        </Paragraph>
+        <Box mb={8}>
+          <Paragraph>
+            Art, Music,{' '}
+            <NextLink href="#">
+              <Link variant="link-text">Arduino</Link>
+            </NextLink>
+            , Swimming,{' '}
+            <NextLink href="#">
+              <Link variant="link-text">Photography</Link>
+            </NextLink>
+            , Technologies, Machine Learning
+          </Paragraph>
+        </Box>
 
         <BlockTitle>On the web</BlockTitle>
 
@@ -102,6 +104,30 @@ export default function Home() {
         <MediaLink href="#" icon={<IoLogoDiscord/>}>
           Discord
         </MediaLink>
+
+
+        <SimpleGrid columns={[1, 2, 2]} spacing={8}>
+          <GridItem
+            href="#" 
+            title="Subs" 
+            subtitle="Best app ever" 
+            src="photo.jpeg"
+          />
+
+          <GridItem
+            href="#" 
+            title="Subs" 
+            subtitle="Best app ever" 
+            src="photo.jpeg"
+          />
+
+<GridItem
+            href="#" 
+            title="Subs" 
+            subtitle="Best app ever" 
+            src="photo.jpeg"
+          />
+        </SimpleGrid>
 
         <Box align="center" my={4}>
           <CustomButton href="./posts">Popular posts</CustomButton>
