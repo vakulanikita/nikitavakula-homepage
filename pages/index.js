@@ -6,6 +6,7 @@ import Profile from '../components/profile'
 import BlockTitle from '../components/block-title'
 import Paragraph from '../components/paragraph'
 import CustomButton from '../components/button'
+import MediaLink from '../components/media-link'
 import { BioSection, BioHeader } from '../components/bio'
 import styles from '../styles/Home.module.scss'
 import { 
@@ -17,6 +18,17 @@ import {
   Container,
   useColorModeValue 
 } from '@chakra-ui/react'
+import {
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoDiscord,
+  IoLogoTelegram,
+  
+} from 'react-icons/io5'
+import {
+  FaTelegramPlane
+} from 'react-icons/fa'
 
 
 export default function Home() {
@@ -33,7 +45,7 @@ export default function Home() {
         <BlockTitle>Work</BlockTitle>
 
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
+          Nikita is a freelance and a frontend developer based in Moscow with a
           passion for building digital services/stuff he wants. He has a knack
           for all things launching products, from planning and designing all the
           way to solving real-life problems with code. When not online, he loves
@@ -77,6 +89,19 @@ export default function Home() {
         </Paragraph>
 
         <BlockTitle>On the web</BlockTitle>
+
+        <MediaLink href="#" icon={<IoLogoGithub/>}>
+          @vakulanikita
+        </MediaLink>
+        <MediaLink href="#" icon={<IoLogoInstagram/>}>
+          @whynikitaaa
+        </MediaLink>
+        <MediaLink href="#" icon={<FaTelegramPlane/>}>
+          @vakulanikita
+        </MediaLink>
+        <MediaLink href="#" icon={<IoLogoDiscord/>}>
+          Discord
+        </MediaLink>
 
         <Box align="center" my={4}>
           <CustomButton href="./posts">Popular posts</CustomButton>
