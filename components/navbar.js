@@ -27,6 +27,7 @@ export default function Navbar() {
       mb={8} 
       bg={useColorModeValue('#ffffff40', '#20202380')}
       css={{ backdropFilter: 'blur(10px)' }}
+      zIndex="1"
     >
       <Container maxW="container.md">
         <Flex as="nav" p={2} justify="space-between" align="center">

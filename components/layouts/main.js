@@ -3,11 +3,11 @@ import dynamic from 'next/dynamic'
 import Navbar from '../navbar'
 import Footer from '../footer'
 import { Container, Box } from '@chakra-ui/react'
-// import VoxelDogLoader from '../voxel-dog-loader'
-// const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
-//   ssr: false,
-//   loading: () => <VoxelDogLoader />
-// })
+import VoxelDogLoader from '../voxel-dog-loader'
+const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
+  ssr: false,
+  loading: () => <VoxelDogLoader />
+})
 
 export default function Main({ children }) {
   return (
@@ -19,7 +19,7 @@ export default function Main({ children }) {
       <Navbar />
       
       <Container maxW="container.md" pt={14}>
-        {/* <LazyVoxelDog /> */}
+        <LazyVoxelDog />
 
         {children}
 

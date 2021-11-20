@@ -7,6 +7,7 @@ import BlockTitle from '../components/block-title'
 import Paragraph from '../components/paragraph'
 import CustomButton from '../components/button'
 import MediaLink from '../components/media-link'
+import GridItem from '../components/grid-item.js';
 import { BioSection, BioHeader } from '../components/bio'
 import { 
   Box,
@@ -28,13 +29,12 @@ import {
 import {
   FaTelegramPlane
 } from 'react-icons/fa'
-import GridItem from '../components/grid-item.js';
 
 
 export default function Home() {
   return (
     <Layout>
-      <Container mb={8}>
+      <Container mb={8} position="relative">
 
         <Alert mb={6}>
           Hello, I&apos;m a front-end developer based in Moscow!
@@ -106,26 +106,19 @@ export default function Home() {
         </MediaLink>
 
 
-        <SimpleGrid columns={[1, 2, 2]} spacing={8}>
+        <SimpleGrid columns={[1, 2, 2]} spacing={6}>
           <GridItem
             href="#" 
             title="Subs" 
             subtitle="Best app ever" 
-            src="photo.jpeg"
+            src="photo2.jpg"
           />
 
           <GridItem
             href="#" 
             title="Subs" 
             subtitle="Best app ever" 
-            src="photo.jpeg"
-          />
-
-<GridItem
-            href="#" 
-            title="Subs" 
-            subtitle="Best app ever" 
-            src="photo.jpeg"
+            src="photo2.jpg"
           />
         </SimpleGrid>
 
@@ -133,10 +126,6 @@ export default function Home() {
           <CustomButton href="./posts">Popular posts</CustomButton>
         </Box>
 
-        {/* <Box>
-          <Heading as="h2" color="spacejelly">Chakra`s UI heading</Heading>
-          <h1 className="text-green-500">Hello, world!</h1>
-        </Box> */}
       </Container>
     </Layout>
   )
