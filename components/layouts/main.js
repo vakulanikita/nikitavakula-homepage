@@ -18,7 +18,7 @@ export default function Main({ children }) {
 
       <Navbar />
       
-      <Container maxW="container.md">
+      <Container maxW="container.md" pt={14}>
         {/* <LazyVoxelDog /> */}
 
         {children}

@@ -21,7 +21,13 @@ import LogoGitHub from "./logo-github";
 
 export default function Navbar() {
   return (
-    <Box mb={8} bg={useColorModeValue('#ffffff40', '#20202380')}>
+    <Box
+      position="fixed"
+      w="100%"
+      mb={8} 
+      bg={useColorModeValue('#ffffff40', '#20202380')}
+      css={{ backdropFilter: 'blur(10px)' }}
+    >
       <Container maxW="container.md">
         <Flex as="nav" p={2} justify="space-between" align="center">
 
