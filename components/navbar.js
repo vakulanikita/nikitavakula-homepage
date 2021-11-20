@@ -17,6 +17,7 @@ import NextLink from 'next/link';
 import Logo from './logo'
 import { HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 import ThemeToggleButton from "./theme-toggle-btn";
+import LogoGitHub from "./logo-github";
 
 export default function Navbar() {
   return (
@@ -37,9 +38,9 @@ export default function Navbar() {
                 <Link p={2}>Posts</Link>
               </NextLink>
               <NextLink href="https://github.com/vakulanikita/nikitavakula-homepage" passHref>
-                <Link p={2} display="flex">
-                  <Image mr={1} src={useColorModeValue('github-dark.svg', 'github-light.svg')} alt="" />
-                  <Box>Source</Box>
+                <Link p={2} display="flex" alignItems="center" style={{ gap: 4}}>
+                  <LogoGitHub />
+                  Source
                 </Link>
               </NextLink>
             </HStack>
