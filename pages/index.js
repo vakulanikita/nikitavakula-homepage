@@ -6,6 +6,7 @@ import Profile from '../components/profile'
 import BlockTitle from '../components/block-title'
 import Paragraph from '../components/paragraph'
 import CustomButton from '../components/button'
+import { BioSection, BioHeader } from '../components/bio'
 import styles from '../styles/Home.module.scss'
 import { 
   Box,
@@ -47,9 +48,35 @@ export default function Home() {
           <CustomButton href="./works">My portfolio</CustomButton>
         </Box>
 
-        <BlockTitle>Bio</BlockTitle>
+        <BlockTitle mb={8}>My stack</BlockTitle>
+
+        <BioSection>
+          <BioHeader>Frontend</BioHeader>React.js Next.js Redux Routing Hooks Three.js Stripe Chakra UI Tailwind CSS
+        </BioSection>
+
+        <BioSection>
+          <BioHeader>Backend</BioHeader>Firebase Axios GraphQL
+        </BioSection>
+
+        <BioSection>
+          <BioHeader>Design</BioHeader>Figma Photoshop
+        </BioSection>
 
         <BlockTitle>I ♥</BlockTitle>
+
+        <Paragraph>
+          Art, Music,{' '}
+          <NextLink href="#">
+            <Link variant="link-text">Arduino</Link>
+          </NextLink>
+          , Swimming,{' '}
+          <NextLink href="#">
+            <Link variant="link-text">Photography</Link>
+          </NextLink>
+          , Technologies, Machine Learning
+        </Paragraph>
+
+        <BlockTitle>On the web</BlockTitle>
 
         <Box align="center" my={4}>
           <CustomButton href="./posts">Popular posts</CustomButton>

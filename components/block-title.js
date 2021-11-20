@@ -6,8 +6,8 @@ const TitleBox = styled.h3`
   text-underline-offset: 6px;
   text-decoration-color: #525252;
   text-decoration-thickness: 4px;
-  margin-top: 3px;
-  margin-bottom: 6px;
+  margin-top: 6px;
+  margin-bottom: 12px;
 `
 
 export default function BlockTitle( {children }) {
