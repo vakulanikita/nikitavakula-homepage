@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Layout from '../components/layouts/main.js'
 import Alert from '../components/alert'
 import Profile from '../components/profile'
+import BlockTitle from '../components/block-title'
 import styles from '../styles/Home.module.scss'
 import { 
   Box,
@@ -24,11 +25,17 @@ export default function Home() {
         </Alert>
 
         <Profile />
+        
+        <BlockTitle>Work</BlockTitle>
 
-        <Box>
+        <BlockTitle>Bio</BlockTitle>
+
+        <BlockTitle>I ♥</BlockTitle>
+
+        {/* <Box>
           <Heading as="h2" color="spacejelly">Chakra`s UI heading</Heading>
           <h1 className="text-green-500">Hello, world!</h1>
-        </Box>
+        </Box> */}
       </Container>
     </Layout>
   )
