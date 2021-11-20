@@ -5,6 +5,7 @@ import Alert from '../components/alert'
 import Profile from '../components/profile'
 import BlockTitle from '../components/block-title'
 import Paragraph from '../components/paragraph'
+import CustomButton from '../components/button'
 import styles from '../styles/Home.module.scss'
 import { 
   Box,
@@ -42,9 +43,17 @@ export default function Home() {
           </NextLink>
         </Paragraph>
 
+        <Box align="center" my={4}>
+          <CustomButton href="./works">My portfolio</CustomButton>
+        </Box>
+
         <BlockTitle>Bio</BlockTitle>
 
         <BlockTitle>I ♥</BlockTitle>
+
+        <Box align="center" my={4}>
+          <CustomButton href="./posts">Popular posts</CustomButton>
+        </Box>
 
         {/* <Box>
           <Heading as="h2" color="spacejelly">Chakra`s UI heading</Heading>
