@@ -7,7 +7,7 @@ import {
 export default function MediaLink({ children, href, icon }) {
   return (
     <Box>
-      <Link href={href}>
+      <Link href={href} target="_blank">
         <Button
           leftIcon={icon}
           colorScheme="teal" 

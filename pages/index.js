@@ -92,17 +92,14 @@ export default function Home() {
 
         <BlockTitle>On the web</BlockTitle>
 
-        <MediaLink href="#" icon={<IoLogoGithub/>}>
+        <MediaLink href="https://github.com/vakulanikita" icon={<IoLogoGithub/>}>
           @vakulanikita
         </MediaLink>
-        <MediaLink href="#" icon={<IoLogoInstagram/>}>
+        <MediaLink href="https://www.instagram.com/whynikitaaa/" icon={<IoLogoInstagram/>}>
           @whynikitaaa
         </MediaLink>
-        <MediaLink href="#" icon={<FaTelegramPlane/>}>
+        <MediaLink href="https://t.me/vakulanikita" icon={<FaTelegramPlane/>}>
           @vakulanikita
-        </MediaLink>
-        <MediaLink href="#" icon={<IoLogoDiscord/>}>
-          Discord
         </MediaLink>
 
 
