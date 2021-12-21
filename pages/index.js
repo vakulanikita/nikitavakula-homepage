@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import NextLink from 'next/link';
-import Layout from '../components/layouts/main.js'
 import Alert from '../components/alert'
 import Profile from '../components/profile'
 import BlockTitle from '../components/block-title'
@@ -33,7 +32,7 @@ import {
 
 export default function Home() {
   return (
-    <Layout>
+    <div>
       <Container mb={8} position="relative">
 
         <Alert mb={6}>
@@ -124,6 +123,6 @@ export default function Home() {
         </Box>
 
       </Container>
-    </Layout>
+    </div>
   )
 }

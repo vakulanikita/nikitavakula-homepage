@@ -9,7 +9,7 @@ const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
   loading: () => <VoxelDogLoader />
 })
 
-export default function Main({ children, router }) {
+export default function MainLayout({ children }) {
   return (
     <Box as="main">
       <Head>

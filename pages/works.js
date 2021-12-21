@@ -1,4 +1,3 @@
-import Layout from '../components/layouts/main';
 import {
   Heading,
   Container,
@@ -9,7 +8,7 @@ import GridItem from '../components/grid-item.js';
 
 export default function Design() {
   return (
-    <Layout>
+    <div>
       <Container mb={8} position="relative">
         <Heading as="h3" fontSize="xl" mb={4}>Works</Heading>
         <SimpleGrid columns={[1, 2, 2]} spacing={6} mb={8}>
@@ -67,6 +66,6 @@ export default function Design() {
           />
         </SimpleGrid>
       </Container>
-    </Layout>
+    </div>
   )
 }
