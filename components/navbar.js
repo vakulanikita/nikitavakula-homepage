@@ -1,3 +1,5 @@
+import NextLink from 'next/link';
+import { useRouter } from 'next/router'
 import { 
   Container,
   Box,
@@ -13,11 +15,26 @@ import {
   IconButton,
   useColorModeValue
 } from "@chakra-ui/react";
-import NextLink from 'next/link';
 import Logo from './logo'
 import { HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 import ThemeToggleButton from "./theme-toggle-btn";
 import LogoGitHub from "./logo-github";
+
+const NavbarLink = ({href, children}) => {
+  const router = useRouter()
+  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+  return (
+    <NextLink href={href} passHref>
+      <Link
+        p={2}
+        bg={router.asPath == href ? "grassTeal" : ""}
+        color={router.asPath == href ? "#202023" : inactiveColor}
+      >
+        {children}
+      </Link>
+    </NextLink>
+  )
+}
 
 export default function Navbar() {
   return (
@@ -38,12 +55,12 @@ export default function Navbar() {
               <Logo />
             </Box>
             <HStack display={{base: 'none', md: 'flex'}} >
-              <NextLink href="/works">
-                <Link p={2}>Works</Link>
-              </NextLink>
-              <NextLink href="/posts">
-                <Link p={2}>Posts</Link>
-              </NextLink>
+              <NavbarLink href="/works">
+                Works
+              </NavbarLink>
+              <NavbarLink href="/posts">
+                Posts
+              </NavbarLink>
               <NextLink href="https://github.com/vakulanikita/nikitavakula-homepage" passHref>
                 <Link p={2} display="flex" alignItems="center" style={{ gap: 4}}>
                   <LogoGitHub />
