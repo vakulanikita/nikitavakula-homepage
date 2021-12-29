@@ -28,7 +28,7 @@ export default function Profile() {
           w="100px"
           h="100px"
           alt="" 
-          src="nikita.jpg"
+          src="me.jpg"
         />
       </Box>
     </Box>

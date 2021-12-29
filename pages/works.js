@@ -13,58 +13,33 @@ export default function Design() {
         <Heading as="h3" fontSize="xl" mb={4}>Works</Heading>
         <SimpleGrid columns={[1, 2, 2]} spacing={6} mb={8}>
           <GridItem
-            href="#" 
-            title="Subs" 
-            subtitle="Best app ever" 
-            src="photo2.jpg"
+            href="https://github.com/vakulanikita/nikitavakula-homepage" 
+            title="Homepage" 
+            subtitle="Repository of my website-portfolio" 
+            src="portfolio.jpg"
           />
           <GridItem
-            href="#" 
-            title="Subs" 
-            subtitle="Best app ever" 
-            src="photo2.jpg"
+            href="https://next-starter-tau.vercel.app/" 
+            title="Starter laylout" 
+            subtitle="To speed up the start of development" 
+            src="next-starter.png"
           />
           <GridItem
-            href="#" 
-            title="Subs" 
-            subtitle="Best app ever" 
-            src="photo2.jpg"
+            href="https://todo-next-chakra.vercel.app/" 
+            title="Todo" 
+            subtitle="React.context, ChakraUI" 
+            src="todo-chakra.jpg"
           />
           <GridItem
-            href="#" 
-            title="Subs" 
-            subtitle="Best app ever" 
-            src="photo2.jpg"
+            href="https://todo-next-redux-mui.vercel.app/" 
+            title="Todo" 
+            subtitle="Redux, MaterialUI" 
+            src="todo-mui.jpg"
           />
         </SimpleGrid>
         <Divider mb={6} />
         <Heading as="h3" fontSize="xl" mb={4}>Collaborations</Heading>
-        <SimpleGrid columns={[1, 2, 2]} spacing={6} mb={8}>
-          <GridItem
-            href="#" 
-            title="Subs" 
-            subtitle="Best app ever" 
-            src="photo2.jpg"
-          />
-          <GridItem
-            href="#" 
-            title="Subs" 
-            subtitle="Best app ever" 
-            src="photo2.jpg"
-          />
-          <GridItem
-            href="#" 
-            title="Subs" 
-            subtitle="Best app ever" 
-            src="photo2.jpg"
-          />
-          <GridItem
-            href="#" 
-            title="Subs" 
-            subtitle="Best app ever" 
-            src="photo2.jpg"
-          />
-        </SimpleGrid>
+        <Heading as="h3" fontSize="xl" color="gray.600">I&apos;m waiting for your invite</Heading>
       </Container>
     </div>
   )

@@ -48,11 +48,12 @@ export default function Home() {
           passion for building digital services/stuff he wants. He has a knack
           for all things launching products, from planning and designing all the
           way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
+          hanging out with his Arduino.
+          {/* Currently, he is living off of his own
           product called {' '}
           <NextLink href="#">
             <Link variant="link-text">Subs</Link>
-          </NextLink>
+          </NextLink> */}
         </Paragraph>
 
         <Box align="center" my={6}>
@@ -62,11 +63,11 @@ export default function Home() {
         <BlockTitle mb={8}>My stack</BlockTitle>
 
         <BioSection>
-          <BioHeader>Frontend</BioHeader>React.js Next.js Redux Routing Hooks Three.js Stripe Chakra UI Tailwind CSS
+          <BioHeader>Frontend</BioHeader>React.js Next.js Redux Three.js Stripe Typescript<br/> MaterialUI ChakraUI TailwindCSS
         </BioSection>
 
         <BioSection>
-          <BioHeader>Backend</BioHeader>Firebase Axios GraphQL
+          <BioHeader>Backend</BioHeader>NestJS Firebase Axios PostgreSQL
         </BioSection>
 
         <BioSection mb={8}>
@@ -101,20 +102,18 @@ export default function Home() {
           @vakulanikita
         </MediaLink>
 
-
-        <SimpleGrid columns={[1, 2, 2]} spacing={6}>
+        <SimpleGrid columns={[1, 2, 2]} mt={2} spacing={6}>
           <GridItem
-            href="#" 
-            title="Subs" 
-            subtitle="Best app ever" 
-            src="photo2.jpg"
+            href="https://github.com/vakulanikita/nikitavakula-homepage" 
+            title="Homepage" 
+            subtitle="Repository of my website-portfolio" 
+            src="portfolio.jpg"
           />
-
           <GridItem
-            href="#" 
-            title="Subs" 
-            subtitle="Best app ever" 
-            src="photo2.jpg"
+            href="https://next-starter-tau.vercel.app/" 
+            title="Starter laylout" 
+            subtitle="To speed up the start of development" 
+            src="next-starter.png"
           />
         </SimpleGrid>
 

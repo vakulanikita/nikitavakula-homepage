@@ -13,38 +13,8 @@ export default function Design() {
         <SimpleGrid columns={[1, 2, 2]} spacing={6} mb={8}>
           <GridItem
             href="#" 
-            title="Subs" 
-            subtitle="Best app ever" 
-            src="photo2.jpg"
-          />
-          <GridItem
-            href="#" 
-            title="Subs" 
-            subtitle="Best app ever" 
-            src="photo2.jpg"
-          />
-          <GridItem
-            href="#" 
-            title="Subs" 
-            subtitle="Best app ever" 
-            src="photo2.jpg"
-          />
-          <GridItem
-            href="#" 
-            title="Subs" 
-            subtitle="Best app ever" 
-            src="photo2.jpg"
-          />
-          <GridItem
-            href="#" 
-            title="Subs" 
-            subtitle="Best app ever" 
-            src="photo2.jpg"
-          />
-          <GridItem
-            href="#" 
-            title="Subs" 
-            subtitle="Best app ever" 
+            title="Post" 
+            subtitle="I haven't written any posts yet :)" 
             src="photo2.jpg"
           />
         </SimpleGrid>

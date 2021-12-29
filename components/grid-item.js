@@ -19,7 +19,7 @@ const ImageBox = styled(Image)`
 
 export default function GridItem({href, title, subtitle, src}) {
   return (
-    <LinkBox href={href}>
+    <LinkBox href={href} target="_blank">
       <ImageBox src={src} alt={title} />
       <Text>{title}</Text>
       <Text fontSize="sm">{subtitle}</Text>
