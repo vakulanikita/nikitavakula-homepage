@@ -36,6 +36,12 @@ export default function Design() {
             subtitle="Redux, MaterialUI" 
             src="todo-mui.jpg"
           />
+          <GridItem
+            href="https://nikitavakula-aq.vercel.app/" 
+            title="Absolut Quartz" 
+            subtitle="My old commercial project (pure JS, HTML, CSS)" 
+            src="aq.jpg"
+          />
         </SimpleGrid>
         <Divider mb={6} />
         <Heading as="h3" fontSize="xl" mb={4}>Collaborations</Heading>
