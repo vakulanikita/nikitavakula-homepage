@@ -28,6 +28,7 @@ import {
 import {
   FaTelegramPlane
 } from 'react-icons/fa'
+import gaEvent from '../utils/gaEvent';
 
 
 export default function Home() {
@@ -67,7 +68,7 @@ export default function Home() {
         </BioSection>
 
         <BioSection>
-          <BioHeader>Backend</BioHeader>NestJS Firebase Axios PostgreSQL
+          <BioHeader>Backend</BioHeader>NestJS Firebase PostgreSQL
         </BioSection>
 
         <BioSection mb={8}>
@@ -79,6 +80,13 @@ export default function Home() {
         <Box mb={8}>
           <Paragraph>
             Art, Music,{' '}
+            <NextLink
+              onClick={() => { gaEvent('click_crypto_channel') }}
+              href="https://t.me/+WSdN6-cCNPdkY2Ri"
+              passHref
+            >
+              <Link variant="link-text">Cryptocurrencies</Link>
+            </NextLink>,{' '}
             <NextLink href="#">
               <Link variant="link-text">Arduino</Link>
             </NextLink>
@@ -109,11 +117,17 @@ export default function Home() {
             subtitle="Repository of my website-portfolio" 
             src="portfolio.jpg"
           />
-          <GridItem
+          {/* <GridItem
             href="https://next-starter-tau.vercel.app/" 
             title="Starter laylout" 
             subtitle="To speed up the start of development" 
             src="next-starter.png"
+          /> */}
+          <GridItem
+            href="https://www.ellty.com" 
+            title="Ellty" 
+            subtitle="Gorgeous online graphic design platform" 
+            src="ellty.png"
           />
         </SimpleGrid>
 

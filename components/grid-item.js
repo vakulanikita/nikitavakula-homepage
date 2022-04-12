@@ -14,7 +14,8 @@ const LinkBox = styled.a`
 
 const ImageBox = styled(Image)`
   border-radius: 12px;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
+  ${'' /* margin-bottom: 10px; */}
 `
 
 export default function GridItem({href, title, subtitle, src}) {
