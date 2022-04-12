@@ -80,13 +80,11 @@ export default function Home() {
         <Box mb={8}>
           <Paragraph>
             Art, Music,{' '}
-            <NextLink
-              onClick={() => { gaEvent('click_crypto_channel') }}
-              href="https://t.me/+WSdN6-cCNPdkY2Ri"
-              passHref
-            >
-              <Link variant="link-text">Cryptocurrencies</Link>
-            </NextLink>,{' '}
+            <span onClick={() => { gaEvent('click_crypto_channel')} }>
+              <NextLink href="https://t.me/+WSdN6-cCNPdkY2Ri" passHref >
+                <Link variant="link-text">Cryptocurrencies</Link>
+              </NextLink>
+            </span>,{' '}
             <NextLink href="#">
               <Link variant="link-text">Arduino</Link>
             </NextLink>
