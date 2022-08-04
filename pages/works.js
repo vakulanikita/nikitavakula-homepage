@@ -18,12 +18,12 @@ export default function Design() {
             subtitle="Repository of my website-portfolio" 
             src="portfolio.jpg"
           />
-          <GridItem
+          {/* <GridItem
             href="https://www.ellty.com" 
             title="Ellty" 
             subtitle="Gorgeous online graphic design platform" 
             src="ellty.png"
-          />
+          /> */}
           <GridItem
             href="https://next-starter-tau.vercel.app/" 
             title="Starter laylout" 

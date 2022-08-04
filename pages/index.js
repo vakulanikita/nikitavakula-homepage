@@ -64,16 +64,16 @@ export default function Home() {
         <BlockTitle mb={8}>My stack</BlockTitle>
 
         <BioSection>
-          <BioHeader>Frontend</BioHeader>React.js Next.js Redux Three.js Stripe Typescript<br/> MaterialUI ChakraUI TailwindCSS
-        </BioSection>
-
-        <BioSection>
-          <BioHeader>Backend</BioHeader>NestJS Firebase PostgreSQL
+          <BioHeader>Frontend</BioHeader>React.js Next.js Typescript Redux Toolkit Three.js Stripe<br/> MaterialUI ChakraUI TailwindCSS
         </BioSection>
 
         <BioSection mb={8}>
-          <BioHeader>Design</BioHeader>Figma Photoshop
+          <BioHeader>Backend</BioHeader>NestJS Firebase PostgreSQL MongoDB TypeORM Heroku
         </BioSection>
+
+        {/* <BioSection mb={8}>
+          <BioHeader>Design</BioHeader>Figma Photoshop Adobe XD
+        </BioSection> */}
 
         <BlockTitle>I ♥</BlockTitle>
 
@@ -115,18 +115,18 @@ export default function Home() {
             subtitle="Repository of my website-portfolio" 
             src="portfolio.jpg"
           />
-          {/* <GridItem
+          <GridItem
             href="https://next-starter-tau.vercel.app/" 
             title="Starter laylout" 
             subtitle="To speed up the start of development" 
             src="next-starter.png"
-          /> */}
-          <GridItem
+          />
+          {/* <GridItem
             href="https://www.ellty.com" 
             title="Ellty" 
             subtitle="Gorgeous online graphic design platform" 
             src="ellty.png"
-          />
+          /> */}
         </SimpleGrid>
 
         <Box align="center" my={4}>
